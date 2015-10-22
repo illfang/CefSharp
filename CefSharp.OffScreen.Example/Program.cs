@@ -48,7 +48,7 @@ namespace CefSharp.OffScreen.Example
             // RequestContext can be shared between browser instances and allows for custom settings
             // e.g. CachePath
             using(var requestContext = new RequestContext(requestContextSettings))
-            using (var browser = new ChromiumWebBrowser(TestUrl, browserSettings, requestContext))
+            using (var browser = new ChromiumWebBrowser(TestUrl, null, requestContext))
             {
                 if (zoomLevel > 1)
                 {
